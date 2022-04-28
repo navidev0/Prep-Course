@@ -66,7 +66,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1 === str2) {
+  if (str1.length === str2.length) {
     return true
   } else {
     return false
@@ -145,7 +145,7 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.floor(num)
+  return Math.round(num)
 }
 
 function redondearHaciaArriba(num) {
@@ -157,7 +157,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random() * 100
+  return Math.random()
 }
 
 function esPositivo(numero) {
@@ -192,7 +192,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola ' + nombre
+  return 'Hola ' + nombre + '!'
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -226,12 +226,12 @@ function esVocal(letra) {
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra === a || letra === e || letra === i || letra === o || letra === u) {
-    console.log('Es vocal')
+  if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+    return 'Es vocal'
   } else if (letra.length !== 1) {
-    console.log('Dato incorrecto')
+    return 'Dato incorrecto'
   } else {
-    console.log('Dato incorrecto')
+    return 'Dato incorrecto'
   }
 }
 
